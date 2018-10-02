@@ -20,7 +20,6 @@ public class swith : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) //マウス左クリック時反転
         {
-            OnOff();
             if(LightState == false)
             {
                 LightState = true;
@@ -29,6 +28,7 @@ public class swith : MonoBehaviour
             {
                 LightState = false;
             }
+            OnOff();
         }
     }
 
